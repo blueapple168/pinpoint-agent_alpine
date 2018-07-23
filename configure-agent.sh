@@ -9,6 +9,4 @@ sed -i "/profiler.sampling.rate=/ s/=.*/=${PROFILER_SAMPLING_RATE}/" /pinpoint-a
 
 sed -i "/level value=/ s/=.*/=\"${DEBUG_LEVEL}\"\/>/g" /pinpoint-agent/lib/log4j.xml
 
-#ln -s  /pinpoint-agent /pinpoint-agent
-
 exec "$@"
